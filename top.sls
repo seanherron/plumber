@@ -2,3 +2,6 @@ base:
 
   '*':
     - core
+
+  'cnyvitals':
+    - cnyvitals
