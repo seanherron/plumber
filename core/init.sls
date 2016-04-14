@@ -4,3 +4,13 @@ sean:
     - home: /home/sean
     - groups:
       - sudo
+
+ssh:
+  service:
+    - running
+
+/etc/ssh/sshd_config:
+  file.managed:
+    - source: salt://core/files/etc/ssh/sshd_config
+    - watch_in:
+      - service: ssh
