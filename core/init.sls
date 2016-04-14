@@ -14,3 +14,7 @@ ssh:
     - source: salt://core/files/etc/ssh/sshd_config
     - watch_in:
       - service: ssh
+
+America/Los_Angeles:
+  timezone.system:
+    - utc: True
